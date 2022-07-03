@@ -46,18 +46,7 @@
           <a class="logo-wrapper navbar-brand" href="/">
             <img src="./images/logo.svg" alt="" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-none d-md-flex justify-between w-100">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item dropdown">
                 <a
@@ -119,6 +108,102 @@
             <div class="header-actions d-flex">
               <button class="btn btn-link">Login</button>
               <button class="btn btn-outline-dark">Register</button>
+            </div>
+          </div>
+          <button
+            class="btn btn-icon d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#responsive-header"
+            aria-controls="responsive-header"
+          >
+            <img src="./images/icon-menu.svg" alt="icon-menu" />
+          </button>
+          <div
+            class="offcanvas offcanvas-end d-md-none"
+            tabindex="-1"
+            id="responsive-header"
+            aria-labelledby="responsive-header"
+          >
+            <div class="offcanvas-header d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="d-flex flex-column w-100 responsive-header-menu">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Features
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li class="d-flex">
+                        <img src="./images/icon-todo.svg" alt="todo-icon" />
+                        <a class="dropdown-item" href="#">Todo List</a>
+                      </li>
+                      <li class="d-flex">
+                        <img
+                          src="./images/icon-calendar.svg"
+                          alt="calender-icon"
+                        />
+                        <a class="dropdown-item" href="#">Calender</a>
+                      </li>
+                      <li class="d-flex">
+                        <img
+                          src="./images/icon-reminders.svg"
+                          alt="reminders-icon"
+                        />
+                        <a class="dropdown-item" href="#">Reminders</a>
+                      </li>
+                      <li class="d-flex">
+                        <img
+                          src="./images/icon-planning.svg"
+                          alt="planning-icon"
+                        />
+                        <a class="dropdown-item" href="#">Planning</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Company
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">History</a></li>
+                      <li><a class="dropdown-item" href="#">Our Team</a></li>
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Careers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                </ul>
+                <div class="header-actions d-flex">
+                  <button class="btn btn-link">Login</button>
+                  <button class="btn btn-outline-dark">Register</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

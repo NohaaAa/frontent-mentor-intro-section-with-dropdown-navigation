@@ -46,6 +46,15 @@ body {
 .main-container .nav-link {
   color: hsl(0deg, 0%, 41%);
 }
+.main-container .dropdown-menu {
+  border: none;
+  box-shadow: 10px 10px 10px lightgray;
+}
+@media (max-width: 768px) {
+  .main-container .dropdown-menu {
+    box-shadow: none;
+  }
+}
 .main-container .dropdown-menu li {
   align-items: center;
   padding-left: 20px;
@@ -53,6 +62,11 @@ body {
 .main-container .dropdown-menu li img {
   width: 16px;
   height: 16px;
+}
+.main-container .dropdown-item:focus,
+.main-container .dropdown-item:hover {
+  background-color: transparent !important;
+  color: hsl(0deg, 0%, 8%);
 }
 .main-container .dropdown-item {
   color: hsl(0deg, 0%, 8%);
